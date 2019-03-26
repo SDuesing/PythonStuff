@@ -13,7 +13,7 @@ wavelengths = np.array([355, 532, 1064])
 
 for d in diameter:
     for w in wavelengths:
-        result = ps.MieQ(1.77 + 0.63j, d, w, asDict=True)
+        result = ps.MieQ(1.53 + 0.015j, d, w, asDict=True)
         print(result)
         # Qback = result['Qback']
         # Qabs = result['Qabs']
